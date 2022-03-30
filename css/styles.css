@@ -9,3 +9,9 @@ footer {
   background-color: yellow;
   color: blue;
 }
+
+li {
+  font-weight: bold;
+  margin: 10px;
+  color: darkblue;
+}
