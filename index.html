@@ -7,16 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-
+    <script src="styler.js" defer></script>
 </head>
 
 <body>
     <h1 class="greeting">Доброго ранку, ми з України</h1>
+    <ul>
+        <li>Numbers bu JS</li>
+        <li>Strings operation by JS</li>
+        <li>Styling by JS</li>
+    </ul>
+
+    <footer id="statusBar"></footer>
     <script>
-        const isComing = confirm("Load test script for numbers and variables");
-        console.log(isComing);
+       
+        const words = ["JavaScript", "це", "цікаво"];
+            console.log(words.join(" ")); // "JavaScript це цікаво"
+            console.log(words.join("_")); // "JavaScript-це-цікаво"
+        // const isComing = confirm("Load test script for numbers and variables");
+        // console.log(isComing);
     </script>
-    <script src="numbers.js" onclick=isComin type="module"></script>
+    <!-- <script src="numbers.js" onclick=isComin type="module"></script> -->
 </body>
 
 </html>
