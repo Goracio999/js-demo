@@ -5,9 +5,9 @@ const resetBtn = document.querySelector('button[data-reset]');
 let totalSum = 0;
 console.log(valueInput.value);
 console.log(outputEl);
+// Event handler for "Add" button
 btnAdd.addEventListener('click', function () {
     console.log('clicked');
-    
     const valAdd = Number(valueInput.value);
     totalSum += valAdd;
     console.log(valAdd, typeof valAdd);
@@ -21,6 +21,7 @@ btnAdd.addEventListener('click', function () {
     }
 });
 
+// Event handler for "Clear" button
 resetBtn.addEventListener('click', function () {
     totalSum = 0;
     outputEl.textContent = totalSum;
