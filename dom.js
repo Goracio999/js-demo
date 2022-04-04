@@ -15,9 +15,11 @@ btnAdd.addEventListener('click', function () {
     console.log("total : ", totalSum);
     outputEl.textContent = totalSum;
     if (totalSum < 0) {
-      // change color to "red" for negative value  
+      // change color to "red" for negative value 
+      outputEl.style.color = "red";
     } else {
       // set color to "blue" for not negative value
+      outputEl.style.color = "blue";
     }
 });
 
