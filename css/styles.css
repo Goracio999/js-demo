@@ -21,3 +21,24 @@ span {
   font-weight: bold;
   color: blue;
 }
+
+.animation-status {
+  position: relative;
+  animation-name: status;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+.animation-status:hover {
+  animation-play-state: paused;
+}
+
+@keyframes status {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -20%;
+  }
+}
